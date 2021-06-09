@@ -4,8 +4,18 @@
   "main": "./src/index.js",
   "license": "MIT",
   "files": [
-    "src",
+    "src/**/*.js",
     "README.md"
+  ],
+  "keywords": [
+    "io-ts",
+    "codec",
+    "graphql",
+    "graphql-codegen",
+    "codegen",
+    "generate",
+    "runtime",
+    "safety"
   ],
   "scripts": {
     "build": "tsc -p tsconfig-build.json",
