@@ -1,0 +1,33 @@
+{
+  "name": "io-ts-graphql-codegen",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig-build.json",
+    "typecheck": "tsc",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "fp-ts": "^2.7.0",
+    "graphql": "^15.1.0",
+    "io-ts": "^2.2.9",
+    "io-ts-types": "^0.5.8"
+  },
+  "dependencies": {
+    "@graphql-codegen/plugin-helpers": "^1.17.8",
+    "@types/prettier": "^2.0.2",
+    "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "graphql": "^15.5.0",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
+  }
+}

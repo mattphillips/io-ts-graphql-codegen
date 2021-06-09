@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Print Input should inline named types name value 1`] = `
+t.type({ a: A });
+
+`;
+
+exports[`Print Input should inline non-named types 1`] = `
+t.type({ a: t.literal("A") });
+
+`;
+
+exports[`Print Mutation should inline named types name value 1`] = `
+t.type({ a: A });
+
+`;
+
+exports[`Print Mutation should inline non-named types 1`] = `
+t.type({ a: t.literal("A") });
+
+`;
+
+exports[`Print Named ObjectType should inline named types name value with __typename 1`] = `
+t.type({
+  __typename: t.literal("Alphabet"),
+  a: A,
+});
+
+`;
+
+exports[`Print Named ObjectType should inline non-named types with __typename 1`] = `
+t.type({
+  __typename: t.literal("Alphabet"),
+  a: t.literal("A"),
+});
+
+`;
+
+exports[`Print ObjectType should inline named types name value 1`] = `
+t.type({ a: A });
+
+`;
+
+exports[`Print ObjectType should inline non-named types 1`] = `
+t.type({ a: t.literal("A") });
+
+`;
+
+exports[`Print Query should inline named types name value 1`] = `
+t.type({ a: A });
+
+`;
+
+exports[`Print Query should inline non-named types 1`] = `
+t.type({ a: t.literal("A") });
+
+`;
+
+exports[`Print printNamedType InputType should remove option types with null union on array primitives 1`] = `
+export const Name = t.type({ a: t.array(t.union([t.null, t.string])) });
+export type Name = t.TypeOf<typeof Name>;
+
+`;
+
+exports[`Print printNamedType InputType should remove option types with null union on custom inputs 1`] = `
+export const Name = t.type({ a: t.union([t.null, A]) });
+export type Name = t.TypeOf<typeof Name>;
+
+`;
+
+exports[`Print printNamedType InputType should remove option types with null union on primitives 1`] = `
+export const Name = t.type({ a: t.union([t.null, t.string]) });
+export type Name = t.TypeOf<typeof Name>;
+
+`;
